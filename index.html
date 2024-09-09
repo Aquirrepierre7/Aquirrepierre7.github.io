@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <title>menu con botoenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .cuadro {
+            background-color:navajowhite; /* Color de fondo gris */
+            color:navy; /* Color de letra negra */
+            font-size: 40px; /* Tamaño de letra */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados (opcional) */
+            text-align: center; /* Centrar el texto */
+        }
+    </style>
+</head>
+<body>
+    <div id="day-of-week" class="cuadro">
+        <!-- El día de la semana se mostrará aquí -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const today = new Date();
+            const dayName = daysOfWeek[today.getDay()];
+
+            document.getElementById('day-of-week').textContent = `Hoy es ${dayName}`;
+        });
+    </script>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #283c50; 
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(4, 4, 51, 0.925);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 40px;
+        }
+        .img-container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: left;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+        }
+#dia-semana {
+            font-size: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <img src="LOGO.jpg" width="530px" height="0px">
+        
+    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Inicio</a></li>
+                <li><a href="quienes-somos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Quienes Somos</a></li>
+                <li><a href="productos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Productos</a></li>
+                <li><a href="contactenos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <script src="script.js"></script>
+        <div id="day-of-week"></div>
+    </header> 
+    <div class="img-container">
+        <img src="pierre.gif" alt="pierre" class="left-img" width="800px">
+        <img src="PORTADA.png" alt="portada" class="right-img">
+    </div>
+   
+    <style>
+    .img-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left-img {
+        width: 500px;
+    }
+    
+    .right-img {
+        width: auto;
+        margin-right: +250px; /* Ajusta este valor según sea necesario */
+    }
+    </style>
+   
+
+    <footer class="footer">
+        <p>Pierre Aguirre 2016. Sitio Web con los derechos reservados.</p>
+    </footer>
+<header>
+    <h1>Bienvenido a Nuestro Sitio Web</h1>
+</header>
+<section id="banners">
+    <div class="banner" id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>Conoce más sobre nuestra empresa y nuestros valores.</p>
+    </div>
+    <div class="banner" id="productos">
+        <h2>Productos</h2>
+        <p>Descubre nuestra amplia gama de productos.</p>
+    </div>
+</section>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#banners {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.banner {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 0 10px  #420808;
+}
+
+.banner h2 {
+    margin-top: 0;
+}
+
+.banner p {
+    color:#283c50;
+}
+
+</style>
+
+
+
+
+
+
+<header>
+    <h1></h1>
+</header>
+
+</body>
+</html>

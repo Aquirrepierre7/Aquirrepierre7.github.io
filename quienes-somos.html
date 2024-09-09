@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <title>menu con botoenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .cuadro {
+            background-color:navajowhite; /* Color de fondo gris */
+            color:navy; /* Color de letra negra */
+            font-size: 40px; /* Tamaño de letra */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados (opcional) */
+            text-align: center; /* Centrar el texto */
+        }
+    </style>
+</head>
+<body>
+    <div id="day-of-week" class="cuadro">
+        <!-- El día de la semana se mostrará aquí -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const today = new Date();
+            const dayName = daysOfWeek[today.getDay()];
+
+            document.getElementById('day-of-week').textContent = `Hoy es ${dayName}`;
+        });
+    </script>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(4, 4, 51, 0.925);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 40px;
+        }
+        .img-container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #322f2f;
+            color: white;
+            text-align: left;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+        }
+#dia-semana {
+            font-size: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.jpg" width="530px" height="0px">
+        <nav>
+            <ul>
+                <li><a href="index.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Inicio</a></li>
+                <li><a href="quienes-somos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Quienes Somos</a></li>
+                <li><a href="productos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Productos</a></li>
+                <li><a href="contactenos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div id="day-of-week"></div>
+    </header>
+    <div class="img-container">
+        <img src="pierre.gif" alt="pierre" class="left-img" width="800px">
+        <img src="PORTADA.png" alt="portada" class="right-img">
+    </div>
+   
+    <style>
+    .img-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left-img {
+        width: 500px;
+    }
+    
+    .right-img {
+        width: auto;
+        margin-right: +250px; /* Ajusta este valor según sea necesario */
+    }
+    </style>
+
+
+
+
+
+        <section> 
+            <h1>QUIENES SOMOS</h1>
+            <p>Somos  una empresa de ventas de zapatillas encarga de varias funciones clave para asegurar el éxito en el mercado.  
+                <p></p><strong> 1. Ventas y Atención al Cliente</strong></p>
+                <p>Asesoramiento: Ayudar a los clientes a elegir el calzado adecuado según sus necesidades y preferencias.<p>
+                <p>Información: Proveer detalles sobre la disponibilidad de tallas y modelos.<p>
+                <p>Servicio al Cliente: Ofrecer un servicio de calidad para garantizar la satisfacción del cliente.<p>
+
+                <p></p><strong> 2.Control de Inventario.</strong><p>
+                <p>Gestión de Existencias: Mantener un registro detallado de los productos disponibles para la venta.<p>
+               <p>Reabastecimiento: Asegurar que siempre haya suficiente stock de los modelos más demandados.<p>
+
+               <p></p><strong> 3. Compras y Proveedores.</strong><p>
+               <p>Selección de Proveedores: Establecer relaciones con proveedores confiables que ofrezcan productos de calidad.</p>
+               <p>Adquisición de Productos: Comprar calzado que cumpla con los estándares de la empresa.</p>
+
+                <p></p><strong> 4. Marketing y Promoción.</strong><p>
+                <p>Estrategias de Marketing: Desarrollar campañas publicitarias y promociones para atraer nuevos clientes y fidelizar a los existentes.</p>
+                <p>Promociones Especiales: Ofrecer descuentos y ofertas para aumentar las ventas.<p>
+
+                <p></p><strong> 5. Mantenimiento y Limpieza</strong><p>
+                    <p>Ambiente Agradable: Mantener la tienda en buen estado para proporcionar una experiencia agradable a los clientes.<p>
+                    <p> Limpieza Regular: Realizar tareas de limpieza periódicas para mantener la tienda en óptimas condiciones.<p>
+
+                <p></p><strong> 6. Gestión de Personal</strong></p>
+                    <p>Capacitación: Formar al personal en técnicas de ventas y atención al cliente.<p>
+                    <p>Supervisión: Asegurar que todos los empleados cumplan con sus responsabilidades de manera efectiva.<p>
+
+
+            <h2>Valores</h2>
+            <p>Trabajar en nuestra empresa de zapatillas implicar una variedad de valores importantes.
+            Aquí hay algunos valores clave que suelen ser fundamentales para los empleados de nuestra empresa:<p>
+
+           
+                <p>Trabajo en equipo: Colaborar eficazmente con otros departamentos, como diseño, marketing y ventas, es esencial para el éxito.<p>
+
+                    <p>Pasión por el producto: Tener un interés genuino en el calzado y en cómo mejorar la experiencia del cliente.<p>
+
+                        <p> Sostenibilidad: Compromiso con prácticas ecológicas y sostenibles en la producción y distribución.<p>
+
+                            <p> Atención al detalle: Desde el diseño hasta la fabricación, cada detalle cuenta para asegurar la calidad del producto.<p>
+
+                                <p> Orientación al cliente: Poner al cliente en el centro de todas las decisiones y esfuerzos.<p>
+
+                                    <p>Ética y responsabilidad: Mantener altos estándares éticos y ser responsable en todas las acciones y decisiones.<p>
+
+            <h2>Misión</h2>
+            <p>La misión de nuetra empresa de ventas  variar según sus objetivos y valores :<p>
+
+                <p> Enfoque en Calidad y Estilo Duradero: “Nuestra misión es proporcionar a nuestros clientes calzado de la más alta calidad que refleje estilo, comodidad y durabilidad. <p>
+
+                    <p>Nos esforzamos por ser líderes en la industria del calzado al ofrecer una amplia gama de opciones para todas las edades y preferencias, desde diseños clásicos y atemporales hasta tendencias innovadoras.”<p>
+                        <p> Empoderamiento a través del Calzado de Calidad: “Nos enorgullece tener la misión de empoderar a nuestros clientes a través de calzado de calidad que refleje estilo, innovación y funcionalidad. <p>
+                       
+            <h2>Visión</h2>
+            <p> Nuestro vision es ser la elección preferida de quienes buscan expresar su individualidad a través de zapatos que no solo complementen su estilo, sino que también proporcionen comodidad y confianza en cada paso.”<p>
+                <p> Calzado que Inspira y Transforma: “Nuestra misión es proporcionar calzado que inspire y transforme la vida de las personas. Creemos que los zapatos no son solo accesorios, sino una extensión de la personalidad y el estilo de cada individuo.<p>
+                    <p>Nos esforzamos por ofrecer una amplia gama de opciones que abarquen desde la moda contemporánea hasta la comodidad funcional, permitiendo a nuestros clientes expresar su autenticidad.”<p>
+
+
+                         <h2>Gerente</h2>        
+            <img src="GERENTE .jpg" width="400px" height="290px" alt=""> 
+        </section> 
+        <div class="header-banner">
+            <header>
+                <h1></h1>
+            </header>
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    font-size: 24px; /* Tamaño de la letra */
+    text-align: justify; /* Justificar el texto */
+    margin: 30px 30px; /* Márgenes de la sección */
+}
+
+h1 {
+    font-size: 24px; /* Tamaño de la letra para encabezados */
+    background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+}
+
+p {
+    font-size: 24px; /* Tamaño de la letra para párrafos */
+}
+
+h2 {        font-size: 30px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        </style>
+
+
+
+
+
+</main> 
+<footer> 
+    <p style="font-size: 16px;">Pierre Aguirre 2016. Sitio Web con los derechos reservados.</p>
+</footer>
+
+</body> 
+</html>

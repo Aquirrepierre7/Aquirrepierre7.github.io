@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <title>menu con botoenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .cuadro {
+            background-color:navajowhite; /* Color de fondo gris */
+            color:navy; /* Color de letra negra */
+            font-size: 40px; /* Tamaño de letra */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados (opcional) */
+            text-align: center; /* Centrar el texto */
+        }
+    
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div id="day-of-week" class="cuadro">
+        <!-- El día de la semana se mostrará aquí -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const daysOfWeek = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const today = new Date();
+            const dayName = daysOfWeek[today.getDay()];
+
+            document.getElementById('day-of-week').textContent = `Hoy es ${dayName}`;
+        });
+    </script>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(4, 4, 51, 0.925);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 40px;
+        }
+        .img-container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #322f2f;
+            color: white;
+            text-align: left;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            bottom: 0;
+        }
+#dia-semana {
+            font-size: 300px;
+        }
+
+
+ body {
+                        font-family: Arial, sans-serif; 
+                        margin: 0;
+                        padding: 0;  }
+        
+    </style>
+</head>
+<body>
+        <header>
+            <img src="LOGO.jpg" width="530px" height="0px">
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Inicio</a></li>
+                    <li><a href="quienes-somos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Quienes Somos</a></li>
+                    <li><a href="productos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Productos</a></li>
+                    <li><a href="contactenos.html" style="font-size: 40px; color: white;" onmouseover="this.style.color='red'" onmouseout="this.style.color='white'">Contáctenos</a></li>
+                </ul>
+            </nav>
+             <div id="day-of-week"></div>
+       </header>
+       <div class="img-container">
+        <img src="pierre.gif" alt="pierre" class="left-img" width="800px">
+        <img src="PORTADA.png" alt="portada" class="right-img">
+    </div>
+   
+    <style>
+    .img-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .left-img {
+        width: 500px;
+    }
+    
+    .right-img {
+        width: auto;
+        margin-right: +250px; /* Ajusta este valor según sea necesario */
+    }
+    </style>
+            <style>
+                .header-banner {
+                    background-color: #333; /* Color gris oscuro */
+                    color: white; /* Color de la letra blanco */
+                    text-align: center;
+                    padding: 20px;
+                    width: 100%; 
+                    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+                    font-size: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="header-banner">
+                Lista de Productos
+            </div>
+        </body>
+            
+        
+                            <section class="product-container">
+                                <div class="product">
+                                    <img src="adidas.jpg" alt="Producto 1">
+                                    <h3>ADIDAS</h3>
+                                    <P>Características Generales</P>
+                                
+                                        <P>Las zapatillas Adidas suelen estar hechas de materiales como cuero, lona y sintéticos, con suelas de goma que ofrecen gran adherencia y flexibilidad.
+                                        
+                                            Son conocidas por ser cómodas y duraderas, ideales para diferentes tipos de deportes y actividades diarias.
+                                           
+                                             Adidas incorpora tecnologías avanzadas en sus diseños, como Boost y Primeknit, para mejorar el rendimiento y la comodidad.</P>
+                                        <P>Estilo y Versatilidad</P>
+                
+                                        </P> En la marca Adidas ofrecemos una amplia gama de estilos, desde modelos clásicos como las Stan Smith y Superstar, hasta opciones más modernas y técnicas como las Ultraboost.</p>
+                                    <P>Esto las hace perfectas tanto para el deporte como para el uso diario.</P>
+                                </div>
+                                <div class="product">
+                                    <img src="saucony.jpg" alt="Producto 2">
+                                    <h3>SAUCONY</h3>
+                                    <P>Saucony es una marca reconocida por su compromiso con la innovación y el rendimiento en el ámbito del running.</P>
+                                    <P>Saucony Endorphin Speed 4:</P>
+                                    <P>Ligereza y velocidad: Pesan solo 237 g, lo que las hace un 10.9% más ligeras que la media.
+                                        Comodidad y reactividad: La mediasuela incluye una placa de nylon que proporciona agilidad y una pisada más natural.
+                                        Amortiguación: La suela en el talón es más alta que la media, ofreciendo una amortiguación que reduce la fatiga en las piernas.</P>
+                                
+                                    <P>Durabilidad: La suela tiene una base más amplia y piezas de goma Crystal Rubber en las zonas de desgaste.</P>
+                                    
+                                        <P>Cada modelo está diseñado para satisfacer diferentes necesidades y preferencias de los corredore.</P>
+                                </div>
+                                <div class="product">
+                                    <img src="puma.webp" alt="Producto 3">
+                                    <h3>PUMA</h3>
+                            <p>Las zapatillas PUMA son conocidas por su combinación de estilo, comodidad y rendimiento.</p>
+                            <P>PUMA RS-X:</P>
+                            Diseño: Moderno y robusto, inspirado en los años 80.
+                            Materiales: Mezcla de malla, cuero y goma.
+                            Características: Amortiguación cómoda y suela de goma duradera1.
+                           <P> PUMA Speedcat OG:</P>
+                            Diseño: Elegante y aerodinámico, inspirado en el automovilismo.
+                            Materiales: Cuero y goma.
+                            Características: Plantilla SoftFoam+ para mayor comodidad y amortiguación.
+                            <P>Cada modelo de PUMA está diseñado para ofrecer un equilibrio entre moda y funcionalidad, asegurando que te veas bien y te sientas cómodo en cualquier ocasión.</P>
+                        </div>
+                                <div class="product">
+                                    <img src="hoka.webp" alt="Producto 4">
+                                    <h3>HOKA</h3>
+                                    <p>Las zapatillas Hoka son conocidas por su alto rendimiento, amortiguación ultra acolchada y diseño innovador. Fundada en 2010, la marca se ha destacado en el mundo del running y el trail running.</p>
+                                        <P>Características Destacadas:</P>
+                                       <P>Amortiguación: Hoka es famosa por su amortiguación superior, que proporciona comodidad y soporte durante largas distancias. 
+                                        Ligereza: A pesar de su apariencia robusta, las zapatillas Hoka son sorprendentemente ligeras, lo que ayuda a reducir la fatiga.
+                                       
+                                       <P> Variedad de Modelos:</P>
+                                        Hoka Clifton 9: Conocida por su comodidad y versatilidad.
+                                        Hoka Bondi X: Ideal para largas distancias con una amortiguación máxima.
+                                       
+                                </div>  
+                                <div class="product">
+                                    <img src="under armur.jpg" alt="Producto 5">
+                                    <h3>UNDER ARNUR</h3>
+                            <p>Las zapatillas de Under Armour están diseñadas para mejorar el rendimiento deportivo y ofrecer comodidad en diversas actividades. 
+                                Aquí tienes una descripción general de algunas de sus características destacadas:</p>
+                                <p>Amortiguación UA HOVR™:</p> Proporciona una sensación de gravedad cero para mantener el retorno de energía y eliminar el impacto.
+                                <p>Tecnología UA Storm:</p> Resistente al agua y transpirable, ideal para trail running y senderismo.
+                             
+                                <P>Cada modelo está diseñado con materiales específicos y tecnologías avanzadas para proporcionar soporte, agarre y durabilidad.</P>
+                                </div>
+                                <div class="product">
+                                    <img src="nike.jpg" alt="Producto 6">
+                                    <h3>NIKE</h3>
+                            <p>Nike ofrece una amplia variedad de zapatillas, cada una diseñada para diferentes actividades y estilos. Aquí tienes algunas descripciones de modelos populares con que contamos:
+                            </p>
+                            <p>Nike Air Force 1: </p> son conocidas por su diseño clásico y su comodidad. Originalmente diseñadas para el baloncesto, ahora son un elemento básico en la moda urbana.
+                           <p>Nike Air Max 97:</p>  estas zapatillas ofrecen una amortiguación superior y un estilo distintivo. Son populares tanto para correr como para el uso diario.
+                            <p>Nike Pegasus 41:</p>  La tecnología Zoom Air en la suela proporciona una excelente amortiguación y respuesta.
+                             </div> 
+                            <div class="product">
+                                    <img src="new balance.jpg" alt="Producto 7">
+                                    <h3>NEW BALANCE</h3>
+                            <p>Las zapatillas New Balance son conocidas por su comodidad, durabilidad y estilo. Aquí tienes una descripción general de algunas características destacadas:
+                               <P>Variedad de Modelos:</P>  Desde modelos clásicos como las New Balance 574, conocidas por su diseño icónico y versatilidad, hasta modelos más modernos como las 327, que combinan estilo retro con tecnología actual.
+                                <P>Materiales de Alta Calidad:</P> Utilizan materiales como cuero, malla y suelas de caucho duraderas, asegurando que las zapatillas no solo sean cómodas, sino también resistentes.
+                                <P>Diseño Ergonómico:</P> Las zapatillas están diseñadas para adaptarse a diferentes tipos de pronación, ayudando a prevenir lesiones y mejorar el rendimiento al correr.</p>
+                        </div>
+                                <div class="product">
+                                    <img src="rebook.jpg" alt="Producto 8">
+                                    <h3>REEBOK</h3>
+                                    <p>Reebok ofrece una amplia variedad de zapatillas que se adaptan a diferentes necesidades y estilos. Aquí tienes algunas descripciones de los modelos que tenemos:
+                                    </p>
+                                    <p>Zig Kinetica:</p> Estas zapatillas están diseñadas para el running y el gimnasio. Cuentan con una suela innovadora que proporciona una gran amortiguación y retorno de energía.
+                                    <p>Club C:</p> Inspiradas en el tenis, estas zapatillas son perfectas para un look casual y retro. Están disponibles en varios colores y materiales, como cuero y nylon.
+                                    <p>Nano X4:</p> Ideales para el fitness, estas zapatillas ofrecen una gran estabilidad y soporte gracias a su suela de caucho y su parte superior de malla ligera.
+                                </div>
+                                <div class="product">
+                                    <img src="brooks.jpg" alt="Producto 9">
+                                    <h3>BROOKS</h3>
+                                    <P>Las zapatillas Brooks son conocidas por su alta calidad y rendimiento, especialmente en el ámbito del running. Aquí tienes una descripción general de algunas de sus categorías principales que tenemos:</P>
+                                        <P>Cushion:</P> Estas zapatillas están diseñadas para ofrecer la máxima amortiguación y comodidad. Son ideales para corredores que buscan una experiencia de carrera suave y protegida. Ejemplos incluyen las Brooks Ghost y Glycerin.
+                                        <P>Energize:</P> Estas zapatillas están diseñadas para proporcionar un retorno de energía adicional en cada paso. Son perfectas para corredores que buscan un poco más de impulso en su zancada. Ejemplos incluyen las Brooks Levitate y Ricochet.
+                                        
+                                        <P>Cada categoría está diseñada para satisfacer diferentes necesidades y preferencias de los corredores.
+                                </div>       
+                                <div class="product">
+                                    <img src="asic.jpg" alt="Producto 10">
+                                    <h3>ASIC</h3>
+                                    <p>Las zapatillas ASICS son conocidas por su calidad y tecnología avanzada, diseñadas para diferentes tipos de deportes y actividades. Aquí tienes una descripción general de algunas de sus características más destacadas:</p>
+                                    <P>Amortiguación GEL:</P>  Muchas zapatillas ASICS, como las GEL-Nimbus y GEL-Kayano, incorporan la tecnología de amortiguación GEL en el talón y el antepié, proporcionando una excelente absorción de impactos
+                                     <P>Diseño de malla transpirable:</P> Muchas zapatillas ASICS cuentan con paneles de malla que mejoran la ventilación y mantienen los pies frescos y cómodos durante el ejercicio.
+                                     <P>Suela de goma duradera:</P> La suela de goma ofrece un excelente agarre y tracción en diferentes superficies, lo que las hace ideales para correr en exteriores e interiores.
+                                </div>
+                                <body>
+                                    <div class="header-banner">
+                                    
+                                    </div>
+                                </body>  
+                                <footer> 
+                                    <p style="font-size: 16px;">Pierre Aguirre 2016. Sitio Web con los derechos reservados.</P>
+                                </footer>              
+                                <style>
+                                    .product-container {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: space-around;
+                                    }
+                                    .product {
+                                        border: 1px solid #ccc;
+                                        border-radius: 20px;
+                                        padding: 5px;
+                                        margin: 0px;
+                                        width: 18%;
+                                        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                                        text-align: center;
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                    }
+                                    .product:hover {
+                                        transform: scale(1.05);
+                                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                                    }
+                                    .product img {
+                                        max-width: 90%;
+                                        height: auto;
+                                        border-radius: 5px;
+                                        transition: transform 0.3s ease;
+                                    }
+                                    .product img:hover {
+                                        transform: scale(1.1);
+                                    }
+                                    .product h3 {
+                                        font-size: 35px;
+                                        margin: 5px 5px;
+                                    }
+                                    .product p {
+                                        font-size: 18px;
+                                        color: #0f0e0e;
+                                    
+                                </style>
+                                
+                                <STyle>
+                                }
+                                    .product img {
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                    }
+                                    .product img:hover {
+                                        transform: scale(1.1);
+                                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                                    }
+                                    </STyle>
+
+                     <footer> 
+                        <p style="font-size: 16px;">Pierre Aguirre 2016. Sitio Web con los derechos reservados.</P>
+                    </footer>  
+                                 
+                                
+                  
+</body> 
+</html>
